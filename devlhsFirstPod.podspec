@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
-  s.name         = "firstPod"
-  s.version      = "0.0.2"
+  s.name         = "devlhsFirstPod"
+  s.version      = "0.0.1"
   s.summary      = "手电筒🔦."
   s.description  = <<-DESC
                     带闪光灯的手电筒
