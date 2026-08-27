@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/luo71418578/firstPod.git", :tag => "#{s.version}" }
 
   s.platform     = :ios, '12.0'
-  s.source_files = "devlhsFirstPod/*.{h,m}"
+  s.source_files = "devlhsFirstPod/**/*.{h,m}"
 
   s.framework    = "UIKit"
   s.requires_arc = true
