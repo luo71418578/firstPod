@@ -1,0 +1,16 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '12.0'
+
+target 'flashlight' do
+
+source 'https://cdn.cocoapods.org/'
+
+
+# 网络
+pod 'AFNetworking',           '4.0.1'
+
+pod 'devlhsFirstPod',         '0.0.3'
+
+
+
+end
