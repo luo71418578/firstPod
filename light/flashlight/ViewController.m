@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "lhsCommonMethod.h"
 
 #define MIN_FREQ   1
 #define MAX_FREQ   10
@@ -46,7 +47,6 @@
     shineFreq = MIN_FREQ;
     _flashLabel.text = [NSString stringWithFormat:@"%dhz",shineFreq];
     _flashSlider.value = shineFreq*1.0/(MAX_FREQ-MIN_FREQ);
-    
     
     
     AVCaptureDevice *device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
