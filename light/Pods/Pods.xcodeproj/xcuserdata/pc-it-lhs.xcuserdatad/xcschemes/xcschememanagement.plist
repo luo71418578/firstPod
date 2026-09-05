@@ -18,7 +18,7 @@
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
-		<key>devlhsFirstPod.xcscheme</key>
+		<key>lhsCommonMethod.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

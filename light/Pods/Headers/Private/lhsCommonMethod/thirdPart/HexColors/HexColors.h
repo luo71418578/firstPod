@@ -1,0 +1,1 @@
+../../../../../lhsCommonMethod/lhsCommonMethod/thirdPart/HexColors/HexColors.h
