@@ -30,6 +30,8 @@ Pod::Spec.new do |s|
   # thirdPart 下的各个模块
   s.subspec 'CMMThirdPart' do |ss|
     ss.source_files = 'lhsCommonMethod/thirdPart/CMMThirdPart.{h,m}'
+    ss.dependency 'lhsCommonMethod/LBXPermissions'
+    ss.dependency 'lhsCommonMethod/Toast'
   end
 
   s.subspec 'CountdownTimer' do |ss|
@@ -54,6 +56,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'MMLocationManager' do |ss|
     ss.source_files = 'lhsCommonMethod/thirdPart/MMLocationManager/*.{h,m}'
+    ss.dependency 'lhsCommonMethod/CMMThirdPart'
   end
 
   s.subspec 'Toast' do |ss|
