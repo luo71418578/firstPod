@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'lhsCommonMethod'
-  s.version      = '0.0.8'
+  s.version      = '0.0.9'
   s.summary      = 'A common utility library for iOS projects'
   s.description  = <<-DESC
     lhsCommonMethod is a common utility library providing tools for permissions,
@@ -13,18 +13,50 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '13.0'
 
-  # Source files
-  s.source_files = 'lhsCommonMethod/**/*.{h,m}'
-
-  # Preserve directory structure for headers
-  s.header_mappings_dir = 'lhsCommonMethod'
-
-  # Public headers (umbrella header and all public headers)
-  s.public_header_files = 'lhsCommonMethod/**/*.h'
-
   # Frameworks
   s.frameworks   = 'UIKit', 'Foundation', 'AVFoundation', 'WebKit', 'CoreTelephony'
 
   # Requires ARC
   s.requires_arc = true
+
+  # 根目录文件
+  s.source_files = 'lhsCommonMethod/*.{h,m}'
+
+  # Category
+  s.subspec 'Category' do |ss|
+    ss.source_files = 'lhsCommonMethod/Category/*.{h,m}'
+  end
+
+  # thirdPart 下的各个模块
+  s.subspec 'CMMThirdPart' do |ss|
+    ss.source_files = 'lhsCommonMethod/thirdPart/CMMThirdPart.{h,m}'
+  end
+
+  s.subspec 'CountdownTimer' do |ss|
+    ss.source_files = 'lhsCommonMethod/thirdPart/CountdownTimer/*.{h,m}'
+  end
+
+  s.subspec 'CutDownButton' do |ss|
+    ss.source_files = 'lhsCommonMethod/thirdPart/CutDownButton/*.{h,m}'
+  end
+
+  s.subspec 'DocumentPickerManager' do |ss|
+    ss.source_files = 'lhsCommonMethod/thirdPart/DocumentPickerManager/*.{h,m}'
+  end
+
+  s.subspec 'HexColors' do |ss|
+    ss.source_files = 'lhsCommonMethod/thirdPart/HexColors/*.{h,m}'
+  end
+
+  s.subspec 'LBXPermissions' do |ss|
+    ss.source_files = 'lhsCommonMethod/thirdPart/LBXPermissions/*.{h,m}'
+  end
+
+  s.subspec 'MMLocationManager' do |ss|
+    ss.source_files = 'lhsCommonMethod/thirdPart/MMLocationManager/*.{h,m}'
+  end
+
+  s.subspec 'Toast' do |ss|
+    ss.source_files = 'lhsCommonMethod/thirdPart/Toast/*.{h,m}'
+  end
 end
