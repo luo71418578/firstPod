@@ -16,6 +16,9 @@ Pod::Spec.new do |s|
   # Source files
   s.source_files = 'lhsCommonMethod/**/*.{h,m}'
 
+  # Preserve directory structure for headers
+  s.header_mappings_dir = 'lhsCommonMethod'
+
   # Frameworks
   s.frameworks   = 'UIKit', 'Foundation', 'AVFoundation', 'WebKit', 'CoreTelephony'
 
