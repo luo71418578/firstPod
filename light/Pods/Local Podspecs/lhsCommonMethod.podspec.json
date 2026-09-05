@@ -1,6 +1,6 @@
 {
   "name": "lhsCommonMethod",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "summary": "A common utility library for iOS projects",
   "description": "lhsCommonMethod is a common utility library providing tools for permissions,\nnetwork reachability, toast notifications, color utilities, and more.",
   "homepage": "https://github.com/luo71418578/firstPod",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/luo71418578/firstPod.git",
-    "tag": "0.0.7"
+    "tag": "0.0.8"
   },
   "platforms": {
     "ios": "13.0"

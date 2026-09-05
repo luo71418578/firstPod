@@ -14,7 +14,7 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
-  - lhsCommonMethod (0.0.7)
+  - lhsCommonMethod (0.0.8)
 
 DEPENDENCIES:
   - AFNetworking (= 4.0.1)
@@ -30,7 +30,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
-  lhsCommonMethod: f3e35982adbb29f54bc13ca39fe2ec086316748e
+  lhsCommonMethod: aaedc72b1023014594f6fb5626eec473205889c0
 
 PODFILE CHECKSUM: 1e04ec5810403a4032f82d72fb7497c847b41d2a
 

@@ -5,9 +5,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "LBXPermissions/NetReachability.h"
-#import "Toast/UIView+Toast.h"
-#import "../CMMUtility.h"
+#import "NetReachability.h"
+#import "UIView+Toast.h"
+#import "CMMUtility.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
