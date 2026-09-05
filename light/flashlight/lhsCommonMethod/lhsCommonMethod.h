@@ -13,7 +13,7 @@
 #import "CMMUtility.h"
 #import "HWToolBox.h"
 #import "lhsDataMacros.h"
-#import "SLBLoadingView.h"
+// #import "SLBLoadingView.h"  // 文件当前不存在
 #import "TLJumpNavManager.h"
 
 // MARK: - 第三方组件封装
@@ -50,6 +50,12 @@
 #import "thirdPart/LBXPermissions/LBXPermissionSetting.h"
 #import "thirdPart/LBXPermissions/LBXPermissionTracking.h"
 #import "thirdPart/LBXPermissions/NetReachability.h"
+
+// MARK: - Category 扩展
+#import "Category/NSArray+JSON.h"
+#import "Category/NSDictionary+JSON.h"
+#import "Category/NSString+TransformationType.h"
+#import "Category/UIApplication+Extensions.h"
 
 // MARK: - Toast 提示
 #import "thirdPart/Toast/UIView+Toast.h"

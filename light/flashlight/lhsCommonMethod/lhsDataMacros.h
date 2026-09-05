@@ -9,7 +9,7 @@
 #define lhsDataMacros_h
 
 #import "thirdPart/HexColors/HexColors.h"
-#import "UIApplication+Extensions.h"
+#import "Category/UIApplication+Extensions.h"
 
 //颜色设置
 #define  colorWith(string)   [UIColor hx_colorWithHexRGBAString:string]

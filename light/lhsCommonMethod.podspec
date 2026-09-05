@@ -14,13 +14,13 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '13.0'
 
   # Source files
-  s.source_files = 'flashlight/lhsCommonMethod/**/*.{h,m}'
+  s.source_files = 'light/flashlight/lhsCommonMethod/**/*.{h,m}'
 
   # Preserve directory structure for headers
-  s.header_mappings_dir = 'flashlight/lhsCommonMethod'
+  s.header_mappings_dir = 'light/flashlight/lhsCommonMethod'
 
   # Public headers (umbrella header and all public headers)
-  s.public_header_files = 'flashlight/lhsCommonMethod/**/*.h'
+  s.public_header_files = 'light/flashlight/lhsCommonMethod/**/*.h'
 
   # Frameworks
   s.frameworks   = 'UIKit', 'Foundation', 'AVFoundation', 'WebKit', 'CoreTelephony'
