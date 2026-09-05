@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
-  s.name         = 'devlhsFirstPod'
+  s.name         = 'lhsCommonMethod'
   s.version      = '0.0.4'
   s.summary      = 'A common utility library for iOS projects'
   s.description  = <<-DESC
-    devlhsFirstPod is a common utility library providing tools for permissions,
+    lhsCommonMethod is a common utility library providing tools for permissions,
     network reachability, toast notifications, color utilities, and more.
   DESC
   s.homepage     = 'https://github.com/luo71418578/firstPod'
