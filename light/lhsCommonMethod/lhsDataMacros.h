@@ -8,7 +8,7 @@
 #ifndef lhsDataMacros_h
 #define lhsDataMacros_h
 
-#import "HexColors/HexColors.h"
+#import "thirdPart/HexColors/HexColors.h"
 #import "Category/UIApplication+Extensions.h"
 
 //颜色设置

@@ -10,7 +10,6 @@ source 'https://cdn.cocoapods.org/'
 pod 'AFNetworking',           '4.0.1'
 
 # 本地工具库
-#pod 'lhsCommonMethod', :git => 'https://github.com/luo71418578/firstPod.git', :tag => '0.0.9'
-#pod 'lhsCommonMethod', :podspec => '../lhsCommonMethod.podspec'
+pod 'lhsCommonMethod', :git => 'https://github.com/luo71418578/firstPod.git', :tag => '0.0.10'
 
 end
