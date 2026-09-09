@@ -304,20 +304,20 @@
 //        @property (nonatomic, readonly, copy, nullable) NSString *ocean; // eg. Pacific Ocean
 //        @property (nonatomic, readonly, copy, nullable) NSArray<NSString *> *areasOfInterest; /
         
-        DLog(@"------name-----%@",place.name);
-        DLog(@"------name-----%@",place.thoroughfare);
-        DLog(@"------name-----%@",place.subThoroughfare);
-        DLog(@"------name-----%@",place.locality);
-        DLog(@"------name-----%@",place.subLocality);
-        DLog(@"------name-----%@",place.administrativeArea);
-        DLog(@"------name-----%@",place.subAdministrativeArea);
-        DLog(@"------name-----%@",place.postalCode);
-        DLog(@"------ISOcountryCode-----%@",place.ISOcountryCode);
-        DLog(@"------name-----%@",place.country);
-        DLog(@"------name-----%@",place.inlandWater);
-        DLog(@"------name-----%@",place.ocean);
-        DLog(@"------name-----%@",place.areasOfInterest);
-        DLog(@"------name-----%@",place.areasOfInterest);
+        NSLog(@"------name-----%@",place.name);
+        NSLog(@"------name-----%@",place.thoroughfare);
+        NSLog(@"------name-----%@",place.subThoroughfare);
+        NSLog(@"------name-----%@",place.locality);
+        NSLog(@"------name-----%@",place.subLocality);
+        NSLog(@"------name-----%@",place.administrativeArea);
+        NSLog(@"------name-----%@",place.subAdministrativeArea);
+        NSLog(@"------name-----%@",place.postalCode);
+        NSLog(@"------ISOcountryCode-----%@",place.ISOcountryCode);
+        NSLog(@"------name-----%@",place.country);
+        NSLog(@"------name-----%@",place.inlandWater);
+        NSLog(@"------name-----%@",place.ocean);
+        NSLog(@"------name-----%@",place.areasOfInterest);
+        NSLog(@"------name-----%@",place.areasOfInterest);
 
         
         for (CLPlacemark * placeMark in placemarks)

@@ -14,30 +14,17 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
-  - lhsCommonMethod (0.0.9)
 
 DEPENDENCIES:
   - AFNetworking (= 4.0.1)
-  - lhsCommonMethod (from `https://github.com/luo71418578/firstPod.git`, tag `0.0.9`)
 
 SPEC REPOS:
   trunk:
     - AFNetworking
 
-EXTERNAL SOURCES:
-  lhsCommonMethod:
-    :git: https://github.com/luo71418578/firstPod.git
-    :tag: 0.0.9
-
-CHECKOUT OPTIONS:
-  lhsCommonMethod:
-    :git: https://github.com/luo71418578/firstPod.git
-    :tag: 0.0.9
-
 SPEC CHECKSUMS:
   AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
-  lhsCommonMethod: 9b88d886e25ef11c954bf8ffd8fee80c58dc9e0b
 
-PODFILE CHECKSUM: fa026b1f3a8c3c00c12969f76558914e732802c7
+PODFILE CHECKSUM: 543c63fe65c246c27cd0712fd6c3e768a4cb9064
 
 COCOAPODS: 1.16.2

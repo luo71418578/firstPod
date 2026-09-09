@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "lhsCommonMethod.h"
+//#import "lhsCommonMethod.h"
 
 #define MIN_FREQ   1
 #define MAX_FREQ   10
