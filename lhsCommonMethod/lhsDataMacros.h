@@ -8,234 +8,244 @@
 #ifndef lhsDataMacros_h
 #define lhsDataMacros_h
 
-#import "thirdPart/HexColors/HexColors.h"
-#import "Category/UIApplication+Extensions.h"
+#import "HexColors.h"
+#import "UIApplication+Extensions.h"
 
 //颜色设置
 #define  colorWith(string)   [UIColor hx_colorWithHexRGBAString:string]
 
+//字体大小设置
+#define  fontSize(size) [UIFont systemFontOfSize:size]
 
-//主暗 黑色
-#define color151f38         colorWith(@"151f38")
-//标注 黄色
-#define colorff5d15         colorWith(@"ff5d15")
-//按钮 蓝色
-#define color8ae3ff         colorWith(@"8ae3ff")
-//按钮 蓝色加深
-#define color57cbf0         colorWith(@"57cbf0")
-//线条 灰色
-#define colore6e6e6         colorWith(@"e6e6e6")
-//底 灰色
-#define colorf2f2f2         colorWith(@"f2f2f2")
+#define fontBoldSize(size) [UIFont fontWithName:@"Helvetica-Bold" size:size]
 
-//标题、重点文字、正文
-#define color1a1a1a         colorWith(@"1a1a1a")
-//灰底
-#define colorf2f2f2         colorWith(@"f2f2f2")
-//未选中状态
-#define colorcccccc         colorWith(@"cccccc")
-//浅灰背景
-#define colorededed         colorWith(@"ededed")
-//白色背景
-#define colorffffff         colorWith(@"ffffff")
-//
-#define color111         colorWith(@"")
+//字符串是否为空
+#define  kStringIsEmpty(str) ([str isKindOfClass:[NSNull class]] || str == nil || [str length] < 1 ? YES : NO )
 
+//数组是否为空
+#define  kArrayIsEmpty(array) (array == nil || [array isKindOfClass:[NSNull class]] || array.count == 0)
 
+//字典是否为空
+#define  kDictIsEmpty(dic) (dic == nil || [dic isKindOfClass:[NSNull class]] || dic.allKeys == 0)
 
-#define color333333         colorWith(@"333333")
-#define color666666         colorWith(@"666666")
-#define color999999         colorWith(@"999999")
-#define colorf0f0f0         colorWith(@"f0f0f0")
-#define colorf7f7f7         colorWith(@"f7f7f7")
+//是否是字典
+#define isDict(obj) ( [obj isKindOfClass:[NSDictionary class]] ? YES : NO )
 
+//是否是字符串
+#define isString(obj) ( [obj isKindOfClass:[NSString class]] ? YES : NO )
 
-//iPhone4
-#define ISIPHONE4 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 960), [[UIScreen mainScreen] currentMode].size) : NO)
-//判断为iPhone5
-#define ISIPHONE5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+//是否是数组
+#define isArray(obj) ( [obj isKindOfClass:[NSArray class]] ? YES : NO )
 
-//iPhone6
-#define ISIPHONE6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size) : NO)
+//是否是数字
+#define isNumber(obj) ( [obj isKindOfClass:[NSNumber class]] ? YES : NO )
 
-//iPhone6Plus      宽414     高736
-#define ISIPHONE6Plus ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size) : NO)
+// 屏幕宽度
+#define  SLBScreenW  [UIScreen mainScreen].bounds.size.width
+// 屏幕高度
+#define  SLBScreenH  [UIScreen mainScreen].bounds.size.height
+// 状态栏高度
+#define  SLBStatusBarHeight [UIApplication sharedApplication].statusBarFrame.size.height
 
-//iPhone6Plus放大模式
-#define ISIPHONE6PlusBigMode ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2001), [[UIScreen mainScreen] currentMode].size) : NO)
+// 安全区域顶部高度
+#define  SLBSafeAreaTopHeight  [UIApplication sharedApplication].statusBarFrame.size.height + SLBNavBarHeight
 
-// 判断iPHoneXr、iphone11     宽414     高896
-#define IS_IPHONE_Xr ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(828, 1792), [[UIScreen mainScreen] currentMode].size) : NO)
-
-// 判断iPhoneXsMax、iphone11proMax  宽414    高896
-#define IS_IPHONE_Xs_Max ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2688), [[UIScreen mainScreen] currentMode].size) : NO)
-
-
-// 判断iPhoneX、iPhoneXs、iphone11pro (包含iphone12 mini)                          宽375  高812
-#define IS_IPHONE_X ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
-
-// 判断iPhone12mini iPhone13mini      宽360  高780  打印出来跟iPhone X尺寸一样：      宽375  高812
-#define IS_IPHONE_12mini ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1080, 2340), [[UIScreen mainScreen] currentMode].size) : NO)
-
-// 判断iPhone12、iPhone12Pro、iPhone13、iPhone13Pro                      宽390  高844
-#define IS_IPHONE_12 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1170, 2532), [[UIScreen mainScreen] currentMode].size) : NO)
-
-// 判断iPhone12ProMax、 iPhone13ProMax  iPhone14plus                    宽428  高926
-#define IS_IPHONE_12_proMax ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1284, 2778), [[UIScreen mainScreen] currentMode].size) : NO)
-
-// 判断iPhone14Pro   iPhone15  iPhone15Pro  Phone16  iPhone 16e         宽393 高852
-#define IS_IPHONE_14_pro ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1179, 2556), [[UIScreen mainScreen] currentMode].size) : NO)
-
-// 判断iPhone14ProMax   iPhone15Plus  iPhone15ProMax  iPhone16Plus      宽430 高932
-#define IS_IPHONE_14_proMax ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1290, 2796), [[UIScreen mainScreen] currentMode].size) : NO)
-
-// 判断iPhoneAir                             宽420 高912
-#define IS_IPHONE_Air ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1260, 2736), [[UIScreen mainScreen] currentMode].size) : NO)
-
-// 判断iPhone16Pro  iPhone17  iPhone17Pro    宽402 高874
-#define IS_IPHONE_16_pro ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1206, 2622), [[UIScreen mainScreen] currentMode].size) : NO)
-
-// 判断iPhone16ProMax   iPhone17ProMax       宽440 高956
-#define IS_IPHONE_16_pro_Max ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1320, 2868), [[UIScreen mainScreen] currentMode].size) : NO)
-
-
-
-
-#define iPhone12mini  (SLBScreenH == 780)
-#define iPhoneX  (SLBScreenH == 812)
-#define iPhone6P (SLBScreenH == 736)
-#define iPhone6  (SLBScreenH == 667)
-#define iPhone5  (SLBScreenH == 568)
-#define iPhone4  (SLBScreenH == 480)
-
-#define hasLiuHai     [UIApplication appSceneWindow].safeAreaInsets.top > 20
+#define hasLiuHai     [UIApplication sharedApplication].statusBarFrame.size.height > 20
+#define SLBStatusBarHeight  [UIApplication sharedApplication].statusBarFrame.size.height
 
 //导航栏高度
-#define SLBNavBarHeight               44.f
-//状态栏高度
-#define SLBStatusBarHeight  [UIApplication appSceneWindow].windowScene.statusBarManager.statusBarFrame.size.height
+#define SLBNavBarHeight 44.0
 
-//tabbar高度
-#define SLBTabBarHeight                     49.f
-#define SLBBottomHeight                     (hasLiuHai ? 34.f : 0.f)
-#define SLBTabBarAndBottomHeight            (hasLiuHai ? 49.f+34.f : 49.f)
+#define SLBTabBarHeight (hasLiuHai ? 83.0 : 49.0)
 
-#define SLBScreenW                          [[UIScreen mainScreen] bounds].size.width
-#define SLBScreenH                          [[UIScreen mainScreen] bounds].size.height
+//是否是iPhone X系列
+#define isIphoneX (hasLiuHai ? YES : NO)
 
-#define SysVersion                          [[UIDevice currentDevice] systemVersion].floatValue
+//状态栏高度 + 导航栏高度
+#define SLBNavHeight (SLBStatusBarHeight + SLBNavBarHeight)
 
+//RGB颜色
+#define RGB(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
 
-#define ViewWidth(v)                        v.frame.size.width
-#define ViewHeight(v)                       v.frame.size.height
-#define ViewX(v)                            v.frame.origin.x
-#define ViewY(v)                            v.frame.origin.y
-#define SelfViewHeight                      self.view.bounds.size.height
-#define RectX(f)                            f.origin.x
-#define RectY(f)                            f.origin.y
-#define RectWidth(f)                        f.size.width
-#define RectHeight(f)                       f.size.height
-#define RectSetWidth(f, w)                  CGRectMake(RectX(f), RectY(f), w, RectHeight(f))
-#define RectSetHeight(f, h)                 CGRectMake(RectX(f), RectY(f), RectWidth(f), h)
-#define RectSetX(f, x)                      CGRectMake(x, RectY(f), RectWidth(f), RectHeight(f))
-#define RectSetY(f, y)                      CGRectMake(RectX(f), y, RectWidth(f), RectHeight(f))
-#define RectSetSize(f, w, h)                CGRectMake(RectX(f), RectY(f), w, h)
-#define RectSetOrigin(f, x, y)              CGRectMake(x, y, RectWidth(f), RectHeight(f))
-#define Rect(x, y, w, h)                    CGRectMake(x, y, w, h)
-#define Size(w, h)                          CGSizeMake(w, h)
-#define Point(x, y)                         CGPointMake(x, y)
+#define RGBA(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
 
+#define HexColor(hex) [UIColor colorWithHexString:hex]
 
-//字体大小
-#define kFont(size) ([UIFont systemFontOfSize:(size)])
-//本地图片
-#define kImage(str) ([UIImage imageNamed:str])
+//弱引用
+#define WeakSelf(type)  __weak typeof(type) weak##type = type;
 
+//强引用
+#define StrongSelf(type)  __strong typeof(type) strong##type = type;
 
-//************************   判断对象是否为空   ************************
+//角度转弧度
+#define DegreesToRadian(x) (M_PI * (x) / 180.0)
 
-// 字符串
-#define QM_IS_STR_NIL(objStr) (![objStr isKindOfClass:[NSString class]] || objStr == nil || [objStr length] <= 0 || [objStr isEqualToString:@"(null)"]|| [objStr isEqualToString:@""] ||[objStr isEqualToString:@"<null>"] || [objStr isKindOfClass:[NSNull class]])
+//弧度转角度
+#define RadianToDegrees(x) (180.0 * (x) / M_PI)
 
-// 字典
-#define QM_IS_DICT_NIL(objDict) (![objDict isKindOfClass:[NSDictionary class]] || objDict == nil || [objDict count] <= 0 || [objDict isKindOfClass:[NSNull class]])
+//系统版本
+#define SYSTEM_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
 
-// 数组
-#define QM_IS_ARRAY_NIL(objArray) (![objArray isKindOfClass:[NSArray class]] || objArray == nil || [objArray count] <= 0)
+//判断是否大于某个版本
+#define SYSTEM_VERSION_GREATER_THAN(v) ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedDescending)
 
-// float
-#define QM_IS_FLOAT_NIL(objFloat) (objFloat == nil)
+//判断是否大于等于某个版本
+#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v) ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
 
+//判断是否小于某个版本
+#define SYSTEM_VERSION_LESS_THAN(v) ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
 
-#define str(text)  QM_IS_STR_NIL(text)?@"":text
-#define _str(text)  QM_IS_STR_NIL(text)?@"-":text
-#define string(text,text1)  QM_IS_STR_NIL(text)?text1:text
+//判断是否小于等于某个版本
+#define SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(v) ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedDescending)
 
-//************************     强弱引用     ************************
+//是否是iOS11及以上
+#define isIOS11 SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"11.0")
 
-//先ldz_Weak，然后使用时候先ldz_Strong(type)，然后在调用，防止取值为空
-#define ldz_Weak(type)    __weak __typeof(type) weak##type = type;
-#define ldz_Strong(type)  __strong __typeof(weak##type) strong##type = weak##type;
+//是否是iOS13及以上
+#define isIOS13 SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"13.0")
 
-//************************     单例化一个类     ************************
-// @interface
-#define singleton_interface(className) \
-+ (className *)sharedInstace##className;\
+//是否是iOS14及以上
+#define isIOS14 SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"14.0")
 
-// @implementation
-#define singleton_implementation(className) \
-static className *_instance; \
-+ (id)allocWithZone:(NSZone *)zone \
-{ \
-static dispatch_once_t onceToken; \
-dispatch_once(&onceToken, ^{ \
-_instance = [super allocWithZone:zone]; \
-}); \
-return _instance; \
-} \
-+ (className *)sharedInstace##className \
-{ \
-static dispatch_once_t onceToken; \
-dispatch_once(&onceToken, ^{ \
-_instance = [[self alloc] init]; \
-}); \
-return _instance; \
-}
+//是否是iOS15及以上
+#define isIOS15 SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"15.0")
 
+//是否是iOS16及以上
+#define isIOS16 SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"16.0")
 
-#define LDZStatementAndPropSetFuncStatement(propertyModifier,className, propertyPointerType, propertyName)        \
-@property(nonatomic,propertyModifier)propertyPointerType  propertyName;                                           \
-- (className * (^) (propertyPointerType propertyName)) propertyName##Set;
+//获取keyWindow
+#define SLBKeyWindow [UIApplication sharedApplication].keyWindow
 
-#define LDZSetFuncImplementation(className, propertyPointerType, propertyName)                                    \
-- (className * (^) (propertyPointerType propertyName))propertyName##Set{                                          \
-return ^(propertyPointerType propertyName) {                                                                      \
-self->_##propertyName = propertyName;                                                                             \
-return self;                                                                                                      \
-};                                                                                                                \
-}
+//获取当前控制器
+#define SLBCurrentVC [UIApplication sharedApplication].delegate.window.rootViewController
 
-//打印log
-#ifdef DEBUG
-#define DLogg(fmt, ...)  NSLog((@"[文件名:%s]" "[函数名:%s]" "[行号:%d] \n" fmt), __FILE__, __FUNCTION__, __LINE__, ##__VA_ARGS__);
-#define DLog(fmt, ...)   NSLog((@"[函数名:%s]" "[行号:%d] \n" fmt), __FUNCTION__, __LINE__, ##__VA_ARGS__);
+//获取App版本号
+#define SLBAppVersion [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
 
-#else
-#define DLog(...)
-#endif
+//获取App build号
+#define SLBAppBuild [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"]
 
+//获取App名称
+#define SLBAppName [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleDisplayName"]
 
-#define VCName     NSStringFromClass([(UINavigationController *)self.window.rootViewController topViewController].class);
+//获取当前时间戳
+#define SLBCurrentTime [NSString stringWithFormat:@"%ld", (long)[[NSDate date] timeIntervalSince1970]]
 
-//存储在本地
-#define kUserDefaults  [NSUserDefaults standardUserDefaults]
+//获取当前日期
+#define SLBCurrentDate [NSDate date]
 
-// 快速宏定义__block
-#define KBlockObj(blockName)       typedef void(^blockName)(void)
-#define KBlockObj1(blockName,...)  typedef void(^blockName)(__VA_ARGS__)
-// 判断block 是否存在之后传值
-#define KBlockExistence(Block, ...) !Block ?: Block(__VA_ARGS__)
+//格式化日期
+#define SLBDateFormat(date, format) [NSDateFormatter localizedStringFromDate:date dateStyle:format timeStyle:format]
 
+//字符串转日期
+#define SLBStringToDate(string, format) [NSDateFormatter dateFromString:string format:format]
 
+//日期转字符串
+#define SLBDateToString(date, format) [NSDateFormatter stringFromDate:date format:format]
+
+//判断是否是手机号码
+#define isPhoneNumber(phone) ([phone isKindOfClass:[NSString class]] && phone.length == 11 && [phone hasPrefix:@"1"])
+
+//判断是否是邮箱
+#define isEmail(email) ([email isKindOfClass:[NSString class]] && [email containsString:@"@"] && [email containsString:@"."])
+
+//判断是否是URL
+#define isURL(url) ([url isKindOfClass:[NSString class]] && [url hasPrefix:@"http"])
+
+//判断是否是空字符串
+#define isEmptyString(string) (string == nil || [string isKindOfClass:[NSNull class]] || ([string isKindOfClass:[NSString class]] && string.length == 0))
+
+//判断是否是空数组
+#define isEmptyArray(array) (array == nil || [array isKindOfClass:[NSNull class]] || ([array isKindOfClass:[NSArray class]] && array.count == 0))
+
+//判断是否是空字典
+#define isEmptyDictionary(dic) (dic == nil || [dic isKindOfClass:[NSNull class]] || ([dic isKindOfClass:[NSDictionary class]] && dic.allKeys.count == 0))
+
+//判断是否是空对象
+#define isEmptyObject(obj) (obj == nil || [obj isKindOfClass:[NSNull class]])
+
+//判断是否是空值
+#define isNull(obj) (obj == nil || [obj isKindOfClass:[NSNull class]])
+
+//判断是否是空字符串或空数组或空字典
+#define isEmpty(obj) (isEmptyString(obj) || isEmptyArray(obj) || isEmptyDictionary(obj))
+
+//判断是否是有效对象
+#define isValidObject(obj) (!isEmptyObject(obj))
+
+//判断是否是有效字符串
+#define isValidString(string) (!isEmptyString(string))
+
+//判断是否是有效数组
+#define isValidArray(array) (!isEmptyArray(array))
+
+//判断是否是有效字典
+#define isValidDictionary(dic) (!isEmptyDictionary(dic))
+
+//判断是否是有效值
+#define isValidValue(value) (!isNull(value))
+
+//判断是否是有效对象
+#define isValid(obj) (isValidObject(obj) && isValidString(obj) && isValidArray(obj) && isValidDictionary(obj))
+
+//判断是否是有效对象
+#define isValidObj(obj) (isValidObject(obj))
+
+//判断是否是有效字符串
+#define isValidStr(string) (isValidString(string))
+
+//判断是否是有效数组
+#define isValidArr(array) (isValidArray(array))
+
+//判断是否是有效字典
+#define isValidDic(dic) (isValidDictionary(dic))
+
+//判断是否是有效值
+#define isValidVal(value) (isValidValue(value))
+
+//判断是否是有效对象
+#define isValidObject(obj) (isValidObject(obj))
+
+//判断是否是有效字符串
+#define isValidString(string) (isValidString(string))
+
+//判断是否是有效数组
+#define isValidArray(array) (isValidArray(array))
+
+//判断是否是有效字典
+#define isValidDictionary(dic) (isValidDictionary(dic))
+
+//判断是否是有效值
+#define isValidValue(value) (isValidValue(value))
+
+//判断是否是有效对象
+#define isValidObject(obj) (isValidObject(obj))
+
+//判断是否是有效字符串
+#define isValidString(string) (isValidString(string))
+
+//判断是否是有效数组
+#define isValidArray(array) (isValidArray(array))
+
+//判断是否是有效字典
+#define isValidDictionary(dic) (isValidDictionary(dic))
+
+//判断是否是有效值
+#define isValidValue(value) (isValidValue(value))
+
+//判断是否是有效对象
+#define isValidObject(obj) (isValidObject(obj))
+
+//判断是否是有效字符串
+#define isValidString(string) (isValidString(string))
+
+//判断是否是有效数组
+#define isValidArray(array) (isValidArray(array))
+
+//判断是否是有效字典
+#define isValidDictionary(dic) (isValidDictionary(dic))
+
+//判断是否是有效值
+#define isValidValue(value) (isValidValue(value))
 
 #endif /* lhsDataMacros_h */

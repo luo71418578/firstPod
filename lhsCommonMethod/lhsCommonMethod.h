@@ -17,47 +17,47 @@
 #import "TLJumpNavManager.h"
 
 // MARK: - 第三方组件封装
-#import "thirdPart/CMMThirdPart.h"
+#import "CMMThirdPart.h"
 
 // MARK: - 倒计时
-#import "thirdPart/CountdownTimer/CountdownTimer.h"
-#import "thirdPart/CutDownButton/CountDown.h"
+#import "CountdownTimer.h"
+#import "CountDown.h"
 
 // MARK: - 文档选择器
-#import "thirdPart/DocumentPickerManager/documentPickerManager.h"
+#import "documentPickerManager.h"
 
 // MARK: - 定位管理
-#import "thirdPart/MMLocationManager/MMLocationManager.h"
+#import "MMLocationManager.h"
 
 // MARK: - 颜色工具
-#import "thirdPart/HexColors/HexColors.h"
+#import "HexColors.h"
 
 // MARK: - 权限管理（LBXPermissions）
-#import "thirdPart/LBXPermissions/LBXPermission.h"
-#import "thirdPart/LBXPermissions/LBXPermissionBluetooth.h"
-#import "thirdPart/LBXPermissions/LBXPermissionCalendar.h"
-#import "thirdPart/LBXPermissions/LBXPermissionCamera.h"
-#import "thirdPart/LBXPermissions/LBXPermissionContacts.h"
-#import "thirdPart/LBXPermissions/LBXPermissionData.h"
-#import "thirdPart/LBXPermissions/LBXPermissionHealth.h"
-#import "thirdPart/LBXPermissions/LBXPermissionLocation.h"
-#import "thirdPart/LBXPermissions/LBXPermissionMediaLibrary.h"
-#import "thirdPart/LBXPermissions/LBXPermissionMicrophone.h"
-#import "thirdPart/LBXPermissions/LBXPermissionNet.h"
-#import "thirdPart/LBXPermissions/LBXPermissionNotification.h"
-#import "thirdPart/LBXPermissions/LBXPermissionPhotos.h"
-#import "thirdPart/LBXPermissions/LBXPermissionReminders.h"
-#import "thirdPart/LBXPermissions/LBXPermissionSetting.h"
-#import "thirdPart/LBXPermissions/LBXPermissionTracking.h"
-#import "thirdPart/LBXPermissions/NetReachability.h"
+#import "LBXPermission.h"
+#import "LBXPermissionBluetooth.h"
+#import "LBXPermissionCalendar.h"
+#import "LBXPermissionCamera.h"
+#import "LBXPermissionContacts.h"
+#import "LBXPermissionData.h"
+#import "LBXPermissionHealth.h"
+#import "LBXPermissionLocation.h"
+#import "LBXPermissionMediaLibrary.h"
+#import "LBXPermissionMicrophone.h"
+#import "LBXPermissionNet.h"
+#import "LBXPermissionNotification.h"
+#import "LBXPermissionPhotos.h"
+#import "LBXPermissionReminders.h"
+#import "LBXPermissionSetting.h"
+#import "LBXPermissionTracking.h"
+#import "NetReachability.h"
 
 // MARK: - Category 扩展
-#import "Category/NSArray+JSON.h"
-#import "Category/NSDictionary+JSON.h"
-#import "Category/NSString+TransformationType.h"
-#import "Category/UIApplication+Extensions.h"
+#import "NSArray+JSON.h"
+#import "NSDictionary+JSON.h"
+#import "NSString+TransformationType.h"
+#import "UIApplication+Extensions.h"
 
 // MARK: - Toast 提示
-#import "thirdPart/Toast/UIView+Toast.h"
+#import "UIView+Toast.h"
 
 #endif /* lhsCommonMethod_h */
