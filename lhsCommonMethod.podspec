@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = 'lhsCommonMethod'
   s.version      = '0.0.11'
-  s.summary      = 'A common utility library for iOS projects'
+  s.summary      = 'lhsCommonMethod : A common utility library for iOS projects'
   s.description  = <<-DESC
     lhsCommonMethod is a common utility library providing tools for permissions,
     network reachability, toast notifications, color utilities, and more.
