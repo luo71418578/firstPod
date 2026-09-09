@@ -37,6 +37,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'MMLocationManager' do |ss|
     ss.source_files = 'lhsCommonMethod/MMLocationManager/*.{h,m}'
+    ss.dependency 'lhsCommonMethod/Core'
   end
 
   s.subspec 'CountdownTimer' do |ss|
