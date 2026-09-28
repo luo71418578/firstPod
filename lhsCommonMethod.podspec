@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'lhsCommonMethod'
-  s.version      = '0.0.11'
+  s.version      = '0.0.12'
   s.summary      = 'lhsCommonMethod : A common utility library for iOS projects'
   s.description  = <<-DESC
     lhsCommonMethod is a common utility library providing tools for permissions,
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.author       = { 'luo71418578' => '921257813@qq.com' }
   s.source       = { :git => 'https://github.com/luo71418578/firstPod.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '13.0'
+  s.ios.deployment_target = '15.0'
 
   # Umbrella header (主入口)
   s.source_files = 'lhsCommonMethod/lhsCommonMethod.h'
