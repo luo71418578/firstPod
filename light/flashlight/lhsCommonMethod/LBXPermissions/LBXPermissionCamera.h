@@ -7,14 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <AppTrackingTransparency/AppTrackingTransparency.h> 
+#import <AVFoundation/AVFoundation.h>
 
 
-@interface LBXPermissionTracking : NSObject
+@interface LBXPermissionCamera : NSObject
 
 + (BOOL)authorized;
 
-+ (ATTrackingManagerAuthorizationStatus)authorizationStatus;
++ (AVAuthorizationStatus)authorizationStatus;
 
 + (void)authorizeWithCompletion:(void(^)(BOOL granted ,BOOL firstTime ))completion;
 

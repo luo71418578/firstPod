@@ -16,6 +16,37 @@
 		B11E879C1CD88E5900C8C010 /* flashlightTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B11E879B1CD88E5900C8C010 /* flashlightTests.m */; };
 		B11E87A71CD88E5900C8C010 /* flashlightUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B11E87A61CD88E5900C8C010 /* flashlightUITests.m */; };
 		B193915D1CE99EB600E89677 /* modelUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B193915C1CE99EB600E89677 /* modelUser.m */; };
+		D0DEF4FA306A8D8B008BD110 /* TLJumpNavManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D0DEF4F8306A8D8B008BD110 /* TLJumpNavManager.m */; };
+		D0DEF4FB306A8D8B008BD110 /* LBXPermissionReminders.m in Sources */ = {isa = PBXBuildFile; fileRef = D0DEF4E0306A8D8B008BD110 /* LBXPermissionReminders.m */; };
+		D0DEF4FC306A8D8B008BD110 /* LBXPermissionPhotos.m in Sources */ = {isa = PBXBuildFile; fileRef = D0DEF4DE306A8D8B008BD110 /* LBXPermissionPhotos.m */; };
+		D0DEF4FD306A8D8B008BD110 /* documentPickerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D0DEF4C0306A8D8B008BD110 /* documentPickerManager.m */; };
+		D0DEF4FE306A8D8B008BD110 /* NSArray+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = D0DEF4B1306A8D8B008BD110 /* NSArray+JSON.m */; };
+		D0DEF4FF306A8D8B008BD110 /* LBXPermissionBluetooth.m in Sources */ = {isa = PBXBuildFile; fileRef = D0DEF4C8306A8D8B008BD110 /* LBXPermissionBluetooth.m */; };
+		D0DEF500306A8D8B008BD110 /* LBXPermissionCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = D0DEF4CA306A8D8B008BD110 /* LBXPermissionCalendar.m */; };
+		D0DEF501306A8D8B008BD110 /* HexColors.m in Sources */ = {isa = PBXBuildFile; fileRef = D0DEF4C3306A8D8B008BD110 /* HexColors.m */; };
+		D0DEF502306A8D8B008BD110 /* UIApplication+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = D0DEF4B7306A8D8B008BD110 /* UIApplication+Extensions.m */; };
+		D0DEF503306A8D8B008BD110 /* NetReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = D0DEF4E6306A8D8B008BD110 /* NetReachability.m */; };
+		D0DEF504306A8D8B008BD110 /* LBXPermissionContacts.m in Sources */ = {isa = PBXBuildFile; fileRef = D0DEF4CE306A8D8B008BD110 /* LBXPermissionContacts.m */; };
+		D0DEF505306A8D8B008BD110 /* NSDictionary+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = D0DEF4B3306A8D8B008BD110 /* NSDictionary+JSON.m */; };
+		D0DEF506306A8D8B008BD110 /* CountDown.m in Sources */ = {isa = PBXBuildFile; fileRef = D0DEF4BD306A8D8B008BD110 /* CountDown.m */; };
+		D0DEF507306A8D8B008BD110 /* LBXPermissionTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = D0DEF4E4306A8D8B008BD110 /* LBXPermissionTracking.m */; };
+		D0DEF508306A8D8B008BD110 /* MMLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D0DEF4E9306A8D8B008BD110 /* MMLocationManager.m */; };
+		D0DEF509306A8D8B008BD110 /* LBXPermissionMediaLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = D0DEF4D6306A8D8B008BD110 /* LBXPermissionMediaLibrary.m */; };
+		D0DEF50A306A8D8B008BD110 /* LBXPermissionLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = D0DEF4D4306A8D8B008BD110 /* LBXPermissionLocation.m */; };
+		D0DEF50B306A8D8B008BD110 /* LBXPermissionNet.m in Sources */ = {isa = PBXBuildFile; fileRef = D0DEF4DA306A8D8B008BD110 /* LBXPermissionNet.m */; };
+		D0DEF50C306A8D8B008BD110 /* LBXPermissionNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = D0DEF4DC306A8D8B008BD110 /* LBXPermissionNotification.m */; };
+		D0DEF50D306A8D8B008BD110 /* NSString+TransformationType.m in Sources */ = {isa = PBXBuildFile; fileRef = D0DEF4B5306A8D8B008BD110 /* NSString+TransformationType.m */; };
+		D0DEF50E306A8D8B008BD110 /* LBXPermissionSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = D0DEF4E2306A8D8B008BD110 /* LBXPermissionSetting.m */; };
+		D0DEF50F306A8D8B008BD110 /* LBXPermissionHealth.m in Sources */ = {isa = PBXBuildFile; fileRef = D0DEF4D2306A8D8B008BD110 /* LBXPermissionHealth.m */; };
+		D0DEF510306A8D8B008BD110 /* LBXPermission.m in Sources */ = {isa = PBXBuildFile; fileRef = D0DEF4C6306A8D8B008BD110 /* LBXPermission.m */; };
+		D0DEF511306A8D8B008BD110 /* LBXPermissionCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = D0DEF4CC306A8D8B008BD110 /* LBXPermissionCamera.m */; };
+		D0DEF512306A8D8B008BD110 /* CountdownTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = D0DEF4BA306A8D8B008BD110 /* CountdownTimer.m */; };
+		D0DEF513306A8D8B008BD110 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = D0DEF4ED306A8D8B008BD110 /* UIView+Toast.m */; };
+		D0DEF514306A8D8B008BD110 /* LBXPermissionData.m in Sources */ = {isa = PBXBuildFile; fileRef = D0DEF4D0306A8D8B008BD110 /* LBXPermissionData.m */; };
+		D0DEF515306A8D8B008BD110 /* LBXPermissionMicrophone.m in Sources */ = {isa = PBXBuildFile; fileRef = D0DEF4D8306A8D8B008BD110 /* LBXPermissionMicrophone.m */; };
+		D0DEF516306A8D8B008BD110 /* HWToolBox.m in Sources */ = {isa = PBXBuildFile; fileRef = D0DEF4F4306A8D8B008BD110 /* HWToolBox.m */; };
+		D0DEF517306A8D8B008BD110 /* CMMUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = D0DEF4F2306A8D8B008BD110 /* CMMUtility.m */; };
+		D0DEF518306A8D8B008BD110 /* CMMThirdPart.m in Sources */ = {isa = PBXBuildFile; fileRef = D0DEF4F0306A8D8B008BD110 /* CMMThirdPart.m */; };
 		DB11DEB5F8F9FD64A4065F83 /* libPods-flashlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E607ECB83072FBCE252473E9 /* libPods-flashlight.a */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +88,70 @@
 		B193915B1CE99EB600E89677 /* modelUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = modelUser.h; sourceTree = "<group>"; };
 		B193915C1CE99EB600E89677 /* modelUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = modelUser.m; sourceTree = "<group>"; };
 		B193915F1CE9A78A00E89677 /* LhsSingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LhsSingleton.h; sourceTree = "<group>"; };
+		D0DEF4B0306A8D8B008BD110 /* NSArray+JSON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+JSON.h"; sourceTree = "<group>"; };
+		D0DEF4B1306A8D8B008BD110 /* NSArray+JSON.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+JSON.m"; sourceTree = "<group>"; };
+		D0DEF4B2306A8D8B008BD110 /* NSDictionary+JSON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+JSON.h"; sourceTree = "<group>"; };
+		D0DEF4B3306A8D8B008BD110 /* NSDictionary+JSON.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+JSON.m"; sourceTree = "<group>"; };
+		D0DEF4B4306A8D8B008BD110 /* NSString+TransformationType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+TransformationType.h"; sourceTree = "<group>"; };
+		D0DEF4B5306A8D8B008BD110 /* NSString+TransformationType.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+TransformationType.m"; sourceTree = "<group>"; };
+		D0DEF4B6306A8D8B008BD110 /* UIApplication+Extensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIApplication+Extensions.h"; sourceTree = "<group>"; };
+		D0DEF4B7306A8D8B008BD110 /* UIApplication+Extensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+Extensions.m"; sourceTree = "<group>"; };
+		D0DEF4B9306A8D8B008BD110 /* CountdownTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CountdownTimer.h; sourceTree = "<group>"; };
+		D0DEF4BA306A8D8B008BD110 /* CountdownTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CountdownTimer.m; sourceTree = "<group>"; };
+		D0DEF4BC306A8D8B008BD110 /* CountDown.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CountDown.h; sourceTree = "<group>"; };
+		D0DEF4BD306A8D8B008BD110 /* CountDown.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CountDown.m; sourceTree = "<group>"; };
+		D0DEF4BF306A8D8B008BD110 /* documentPickerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = documentPickerManager.h; sourceTree = "<group>"; };
+		D0DEF4C0306A8D8B008BD110 /* documentPickerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = documentPickerManager.m; sourceTree = "<group>"; };
+		D0DEF4C2306A8D8B008BD110 /* HexColors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HexColors.h; sourceTree = "<group>"; };
+		D0DEF4C3306A8D8B008BD110 /* HexColors.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HexColors.m; sourceTree = "<group>"; };
+		D0DEF4C5306A8D8B008BD110 /* LBXPermission.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBXPermission.h; sourceTree = "<group>"; };
+		D0DEF4C6306A8D8B008BD110 /* LBXPermission.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBXPermission.m; sourceTree = "<group>"; };
+		D0DEF4C7306A8D8B008BD110 /* LBXPermissionBluetooth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBXPermissionBluetooth.h; sourceTree = "<group>"; };
+		D0DEF4C8306A8D8B008BD110 /* LBXPermissionBluetooth.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBXPermissionBluetooth.m; sourceTree = "<group>"; };
+		D0DEF4C9306A8D8B008BD110 /* LBXPermissionCalendar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBXPermissionCalendar.h; sourceTree = "<group>"; };
+		D0DEF4CA306A8D8B008BD110 /* LBXPermissionCalendar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBXPermissionCalendar.m; sourceTree = "<group>"; };
+		D0DEF4CB306A8D8B008BD110 /* LBXPermissionCamera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBXPermissionCamera.h; sourceTree = "<group>"; };
+		D0DEF4CC306A8D8B008BD110 /* LBXPermissionCamera.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBXPermissionCamera.m; sourceTree = "<group>"; };
+		D0DEF4CD306A8D8B008BD110 /* LBXPermissionContacts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBXPermissionContacts.h; sourceTree = "<group>"; };
+		D0DEF4CE306A8D8B008BD110 /* LBXPermissionContacts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBXPermissionContacts.m; sourceTree = "<group>"; };
+		D0DEF4CF306A8D8B008BD110 /* LBXPermissionData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBXPermissionData.h; sourceTree = "<group>"; };
+		D0DEF4D0306A8D8B008BD110 /* LBXPermissionData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBXPermissionData.m; sourceTree = "<group>"; };
+		D0DEF4D1306A8D8B008BD110 /* LBXPermissionHealth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBXPermissionHealth.h; sourceTree = "<group>"; };
+		D0DEF4D2306A8D8B008BD110 /* LBXPermissionHealth.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBXPermissionHealth.m; sourceTree = "<group>"; };
+		D0DEF4D3306A8D8B008BD110 /* LBXPermissionLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBXPermissionLocation.h; sourceTree = "<group>"; };
+		D0DEF4D4306A8D8B008BD110 /* LBXPermissionLocation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBXPermissionLocation.m; sourceTree = "<group>"; };
+		D0DEF4D5306A8D8B008BD110 /* LBXPermissionMediaLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBXPermissionMediaLibrary.h; sourceTree = "<group>"; };
+		D0DEF4D6306A8D8B008BD110 /* LBXPermissionMediaLibrary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBXPermissionMediaLibrary.m; sourceTree = "<group>"; };
+		D0DEF4D7306A8D8B008BD110 /* LBXPermissionMicrophone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBXPermissionMicrophone.h; sourceTree = "<group>"; };
+		D0DEF4D8306A8D8B008BD110 /* LBXPermissionMicrophone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBXPermissionMicrophone.m; sourceTree = "<group>"; };
+		D0DEF4D9306A8D8B008BD110 /* LBXPermissionNet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBXPermissionNet.h; sourceTree = "<group>"; };
+		D0DEF4DA306A8D8B008BD110 /* LBXPermissionNet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBXPermissionNet.m; sourceTree = "<group>"; };
+		D0DEF4DB306A8D8B008BD110 /* LBXPermissionNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBXPermissionNotification.h; sourceTree = "<group>"; };
+		D0DEF4DC306A8D8B008BD110 /* LBXPermissionNotification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBXPermissionNotification.m; sourceTree = "<group>"; };
+		D0DEF4DD306A8D8B008BD110 /* LBXPermissionPhotos.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBXPermissionPhotos.h; sourceTree = "<group>"; };
+		D0DEF4DE306A8D8B008BD110 /* LBXPermissionPhotos.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBXPermissionPhotos.m; sourceTree = "<group>"; };
+		D0DEF4DF306A8D8B008BD110 /* LBXPermissionReminders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBXPermissionReminders.h; sourceTree = "<group>"; };
+		D0DEF4E0306A8D8B008BD110 /* LBXPermissionReminders.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBXPermissionReminders.m; sourceTree = "<group>"; };
+		D0DEF4E1306A8D8B008BD110 /* LBXPermissionSetting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBXPermissionSetting.h; sourceTree = "<group>"; };
+		D0DEF4E2306A8D8B008BD110 /* LBXPermissionSetting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBXPermissionSetting.m; sourceTree = "<group>"; };
+		D0DEF4E3306A8D8B008BD110 /* LBXPermissionTracking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBXPermissionTracking.h; sourceTree = "<group>"; };
+		D0DEF4E4306A8D8B008BD110 /* LBXPermissionTracking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBXPermissionTracking.m; sourceTree = "<group>"; };
+		D0DEF4E5306A8D8B008BD110 /* NetReachability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetReachability.h; sourceTree = "<group>"; };
+		D0DEF4E6306A8D8B008BD110 /* NetReachability.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetReachability.m; sourceTree = "<group>"; };
+		D0DEF4E8306A8D8B008BD110 /* MMLocationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMLocationManager.h; sourceTree = "<group>"; };
+		D0DEF4E9306A8D8B008BD110 /* MMLocationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMLocationManager.m; sourceTree = "<group>"; };
+		D0DEF4EC306A8D8B008BD110 /* UIView+Toast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
+		D0DEF4ED306A8D8B008BD110 /* UIView+Toast.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
+		D0DEF4EF306A8D8B008BD110 /* CMMThirdPart.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMMThirdPart.h; sourceTree = "<group>"; };
+		D0DEF4F0306A8D8B008BD110 /* CMMThirdPart.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMMThirdPart.m; sourceTree = "<group>"; };
+		D0DEF4F1306A8D8B008BD110 /* CMMUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMMUtility.h; sourceTree = "<group>"; };
+		D0DEF4F2306A8D8B008BD110 /* CMMUtility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMMUtility.m; sourceTree = "<group>"; };
+		D0DEF4F3306A8D8B008BD110 /* HWToolBox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HWToolBox.h; sourceTree = "<group>"; };
+		D0DEF4F4306A8D8B008BD110 /* HWToolBox.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HWToolBox.m; sourceTree = "<group>"; };
+		D0DEF4F5306A8D8B008BD110 /* lhsCommonMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lhsCommonMethod.h; sourceTree = "<group>"; };
+		D0DEF4F6306A8D8B008BD110 /* lhsDataMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lhsDataMacros.h; sourceTree = "<group>"; };
+		D0DEF4F7306A8D8B008BD110 /* TLJumpNavManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLJumpNavManager.h; sourceTree = "<group>"; };
+		D0DEF4F8306A8D8B008BD110 /* TLJumpNavManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLJumpNavManager.m; sourceTree = "<group>"; };
 		E607ECB83072FBCE252473E9 /* libPods-flashlight.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-flashlight.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6A35EC193A3422E55193D26 /* Pods-flashlight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flashlight.debug.xcconfig"; path = "Target Support Files/Pods-flashlight/Pods-flashlight.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -129,6 +224,7 @@
 		B11E87801CD88E5800C8C010 /* flashlight */ = {
 			isa = PBXGroup;
 			children = (
+				D0DEF4F9306A8D8B008BD110 /* lhsCommonMethod */,
 				B11E87841CD88E5800C8C010 /* AppDelegate.h */,
 				B11E87851CD88E5800C8C010 /* AppDelegate.m */,
 				B11E87871CD88E5800C8C010 /* ViewController.h */,
@@ -169,6 +265,149 @@
 				B11E87A81CD88E5900C8C010 /* Info.plist */,
 			);
 			path = flashlightUITests;
+			sourceTree = "<group>";
+		};
+		D0DEF4B8306A8D8B008BD110 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				D0DEF4B0306A8D8B008BD110 /* NSArray+JSON.h */,
+				D0DEF4B1306A8D8B008BD110 /* NSArray+JSON.m */,
+				D0DEF4B2306A8D8B008BD110 /* NSDictionary+JSON.h */,
+				D0DEF4B3306A8D8B008BD110 /* NSDictionary+JSON.m */,
+				D0DEF4B4306A8D8B008BD110 /* NSString+TransformationType.h */,
+				D0DEF4B5306A8D8B008BD110 /* NSString+TransformationType.m */,
+				D0DEF4B6306A8D8B008BD110 /* UIApplication+Extensions.h */,
+				D0DEF4B7306A8D8B008BD110 /* UIApplication+Extensions.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		D0DEF4BB306A8D8B008BD110 /* CountdownTimer */ = {
+			isa = PBXGroup;
+			children = (
+				D0DEF4B9306A8D8B008BD110 /* CountdownTimer.h */,
+				D0DEF4BA306A8D8B008BD110 /* CountdownTimer.m */,
+			);
+			path = CountdownTimer;
+			sourceTree = "<group>";
+		};
+		D0DEF4BE306A8D8B008BD110 /* CutDownButton */ = {
+			isa = PBXGroup;
+			children = (
+				D0DEF4BC306A8D8B008BD110 /* CountDown.h */,
+				D0DEF4BD306A8D8B008BD110 /* CountDown.m */,
+			);
+			path = CutDownButton;
+			sourceTree = "<group>";
+		};
+		D0DEF4C1306A8D8B008BD110 /* DocumentPickerManager */ = {
+			isa = PBXGroup;
+			children = (
+				D0DEF4BF306A8D8B008BD110 /* documentPickerManager.h */,
+				D0DEF4C0306A8D8B008BD110 /* documentPickerManager.m */,
+			);
+			path = DocumentPickerManager;
+			sourceTree = "<group>";
+		};
+		D0DEF4C4306A8D8B008BD110 /* HexColors */ = {
+			isa = PBXGroup;
+			children = (
+				D0DEF4C2306A8D8B008BD110 /* HexColors.h */,
+				D0DEF4C3306A8D8B008BD110 /* HexColors.m */,
+			);
+			path = HexColors;
+			sourceTree = "<group>";
+		};
+		D0DEF4E7306A8D8B008BD110 /* LBXPermissions */ = {
+			isa = PBXGroup;
+			children = (
+				D0DEF4C5306A8D8B008BD110 /* LBXPermission.h */,
+				D0DEF4C6306A8D8B008BD110 /* LBXPermission.m */,
+				D0DEF4C7306A8D8B008BD110 /* LBXPermissionBluetooth.h */,
+				D0DEF4C8306A8D8B008BD110 /* LBXPermissionBluetooth.m */,
+				D0DEF4C9306A8D8B008BD110 /* LBXPermissionCalendar.h */,
+				D0DEF4CA306A8D8B008BD110 /* LBXPermissionCalendar.m */,
+				D0DEF4CB306A8D8B008BD110 /* LBXPermissionCamera.h */,
+				D0DEF4CC306A8D8B008BD110 /* LBXPermissionCamera.m */,
+				D0DEF4CD306A8D8B008BD110 /* LBXPermissionContacts.h */,
+				D0DEF4CE306A8D8B008BD110 /* LBXPermissionContacts.m */,
+				D0DEF4CF306A8D8B008BD110 /* LBXPermissionData.h */,
+				D0DEF4D0306A8D8B008BD110 /* LBXPermissionData.m */,
+				D0DEF4D1306A8D8B008BD110 /* LBXPermissionHealth.h */,
+				D0DEF4D2306A8D8B008BD110 /* LBXPermissionHealth.m */,
+				D0DEF4D3306A8D8B008BD110 /* LBXPermissionLocation.h */,
+				D0DEF4D4306A8D8B008BD110 /* LBXPermissionLocation.m */,
+				D0DEF4D5306A8D8B008BD110 /* LBXPermissionMediaLibrary.h */,
+				D0DEF4D6306A8D8B008BD110 /* LBXPermissionMediaLibrary.m */,
+				D0DEF4D7306A8D8B008BD110 /* LBXPermissionMicrophone.h */,
+				D0DEF4D8306A8D8B008BD110 /* LBXPermissionMicrophone.m */,
+				D0DEF4D9306A8D8B008BD110 /* LBXPermissionNet.h */,
+				D0DEF4DA306A8D8B008BD110 /* LBXPermissionNet.m */,
+				D0DEF4DB306A8D8B008BD110 /* LBXPermissionNotification.h */,
+				D0DEF4DC306A8D8B008BD110 /* LBXPermissionNotification.m */,
+				D0DEF4DD306A8D8B008BD110 /* LBXPermissionPhotos.h */,
+				D0DEF4DE306A8D8B008BD110 /* LBXPermissionPhotos.m */,
+				D0DEF4DF306A8D8B008BD110 /* LBXPermissionReminders.h */,
+				D0DEF4E0306A8D8B008BD110 /* LBXPermissionReminders.m */,
+				D0DEF4E1306A8D8B008BD110 /* LBXPermissionSetting.h */,
+				D0DEF4E2306A8D8B008BD110 /* LBXPermissionSetting.m */,
+				D0DEF4E3306A8D8B008BD110 /* LBXPermissionTracking.h */,
+				D0DEF4E4306A8D8B008BD110 /* LBXPermissionTracking.m */,
+				D0DEF4E5306A8D8B008BD110 /* NetReachability.h */,
+				D0DEF4E6306A8D8B008BD110 /* NetReachability.m */,
+			);
+			path = LBXPermissions;
+			sourceTree = "<group>";
+		};
+		D0DEF4EA306A8D8B008BD110 /* MMLocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				D0DEF4E8306A8D8B008BD110 /* MMLocationManager.h */,
+				D0DEF4E9306A8D8B008BD110 /* MMLocationManager.m */,
+			);
+			path = MMLocationManager;
+			sourceTree = "<group>";
+		};
+		D0DEF4EB306A8D8B008BD110 /* thirdPart */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = thirdPart;
+			sourceTree = "<group>";
+		};
+		D0DEF4EE306A8D8B008BD110 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				D0DEF4EC306A8D8B008BD110 /* UIView+Toast.h */,
+				D0DEF4ED306A8D8B008BD110 /* UIView+Toast.m */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		D0DEF4F9306A8D8B008BD110 /* lhsCommonMethod */ = {
+			isa = PBXGroup;
+			children = (
+				D0DEF4B8306A8D8B008BD110 /* Category */,
+				D0DEF4BB306A8D8B008BD110 /* CountdownTimer */,
+				D0DEF4BE306A8D8B008BD110 /* CutDownButton */,
+				D0DEF4C1306A8D8B008BD110 /* DocumentPickerManager */,
+				D0DEF4C4306A8D8B008BD110 /* HexColors */,
+				D0DEF4E7306A8D8B008BD110 /* LBXPermissions */,
+				D0DEF4EA306A8D8B008BD110 /* MMLocationManager */,
+				D0DEF4EB306A8D8B008BD110 /* thirdPart */,
+				D0DEF4EE306A8D8B008BD110 /* Toast */,
+				D0DEF4EF306A8D8B008BD110 /* CMMThirdPart.h */,
+				D0DEF4F0306A8D8B008BD110 /* CMMThirdPart.m */,
+				D0DEF4F1306A8D8B008BD110 /* CMMUtility.h */,
+				D0DEF4F2306A8D8B008BD110 /* CMMUtility.m */,
+				D0DEF4F3306A8D8B008BD110 /* HWToolBox.h */,
+				D0DEF4F4306A8D8B008BD110 /* HWToolBox.m */,
+				D0DEF4F5306A8D8B008BD110 /* lhsCommonMethod.h */,
+				D0DEF4F6306A8D8B008BD110 /* lhsDataMacros.h */,
+				D0DEF4F7306A8D8B008BD110 /* TLJumpNavManager.h */,
+				D0DEF4F8306A8D8B008BD110 /* TLJumpNavManager.m */,
+			);
+			path = lhsCommonMethod;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,6 +569,37 @@
 			buildActionMask = 2147483647;
 			files = (
 				B11E87891CD88E5800C8C010 /* ViewController.m in Sources */,
+				D0DEF4FA306A8D8B008BD110 /* TLJumpNavManager.m in Sources */,
+				D0DEF4FB306A8D8B008BD110 /* LBXPermissionReminders.m in Sources */,
+				D0DEF4FC306A8D8B008BD110 /* LBXPermissionPhotos.m in Sources */,
+				D0DEF4FD306A8D8B008BD110 /* documentPickerManager.m in Sources */,
+				D0DEF4FE306A8D8B008BD110 /* NSArray+JSON.m in Sources */,
+				D0DEF4FF306A8D8B008BD110 /* LBXPermissionBluetooth.m in Sources */,
+				D0DEF500306A8D8B008BD110 /* LBXPermissionCalendar.m in Sources */,
+				D0DEF501306A8D8B008BD110 /* HexColors.m in Sources */,
+				D0DEF502306A8D8B008BD110 /* UIApplication+Extensions.m in Sources */,
+				D0DEF503306A8D8B008BD110 /* NetReachability.m in Sources */,
+				D0DEF504306A8D8B008BD110 /* LBXPermissionContacts.m in Sources */,
+				D0DEF505306A8D8B008BD110 /* NSDictionary+JSON.m in Sources */,
+				D0DEF506306A8D8B008BD110 /* CountDown.m in Sources */,
+				D0DEF507306A8D8B008BD110 /* LBXPermissionTracking.m in Sources */,
+				D0DEF508306A8D8B008BD110 /* MMLocationManager.m in Sources */,
+				D0DEF509306A8D8B008BD110 /* LBXPermissionMediaLibrary.m in Sources */,
+				D0DEF50A306A8D8B008BD110 /* LBXPermissionLocation.m in Sources */,
+				D0DEF50B306A8D8B008BD110 /* LBXPermissionNet.m in Sources */,
+				D0DEF50C306A8D8B008BD110 /* LBXPermissionNotification.m in Sources */,
+				D0DEF50D306A8D8B008BD110 /* NSString+TransformationType.m in Sources */,
+				D0DEF50E306A8D8B008BD110 /* LBXPermissionSetting.m in Sources */,
+				D0DEF50F306A8D8B008BD110 /* LBXPermissionHealth.m in Sources */,
+				D0DEF510306A8D8B008BD110 /* LBXPermission.m in Sources */,
+				D0DEF511306A8D8B008BD110 /* LBXPermissionCamera.m in Sources */,
+				D0DEF512306A8D8B008BD110 /* CountdownTimer.m in Sources */,
+				D0DEF513306A8D8B008BD110 /* UIView+Toast.m in Sources */,
+				D0DEF514306A8D8B008BD110 /* LBXPermissionData.m in Sources */,
+				D0DEF515306A8D8B008BD110 /* LBXPermissionMicrophone.m in Sources */,
+				D0DEF516306A8D8B008BD110 /* HWToolBox.m in Sources */,
+				D0DEF517306A8D8B008BD110 /* CMMUtility.m in Sources */,
+				D0DEF518306A8D8B008BD110 /* CMMThirdPart.m in Sources */,
 				B11E87861CD88E5800C8C010 /* AppDelegate.m in Sources */,
 				B11E87831CD88E5800C8C010 /* main.m in Sources */,
 				B193915D1CE99EB600E89677 /* modelUser.m in Sources */,
