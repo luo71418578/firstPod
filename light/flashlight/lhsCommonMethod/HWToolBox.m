@@ -136,7 +136,19 @@
     if ([platform isEqualToString:@"iPhone18,4"]) return@"iPhoneAir";
     if ([platform isEqualToString:@"iPhone18,5"]) return@"iPhone17e";
 
-    
+    if ([platform isEqualToString:@"iPhone19,2"]) return@"iPhone18Pro";
+    if ([platform isEqualToString:@"iPhone19,3"] || [platform isEqualToString:@"iPhone19,7"]) return@"iPhone18ProMax";
+    if ([platform isEqualToString:@"iPhone19,4"]) return@"iPhoneDuo";
+
+    //iPod Touch
+    if ([platform isEqualToString:@"iPod1,1"])   return @"iPodTouch1G";
+    if ([platform isEqualToString:@"iPod2,1"])   return @"iPodTouch2G";
+    if ([platform isEqualToString:@"iPod3,1"])   return @"iPodTouch3G";
+    if ([platform isEqualToString:@"iPod4,1"])   return @"iPodTouch4G";
+    if ([platform isEqualToString:@"iPod5,1"])   return @"iPodTouch5G";
+    if ([platform isEqualToString:@"iPod7,1"])   return @"iPodTouch6G";
+    if ([platform isEqualToString:@"iPod9,1"])   return @"iPodTouch7G";
+
     //iPad
     if ([platform isEqualToString:@"iPad1,1"])   return @"iPad";
     if ([platform isEqualToString:@"iPad2,1"])   return @"iPad2";
@@ -226,9 +238,46 @@
     if ([platform isEqualToString:@"iPad16,1"] || [platform isEqualToString:@"iPad16,2"]) return @"iPad-mini(A17Pro)";
 
     
-    if ([platform isEqualToString:@"i386"])      return @"iPhoneSimulator";
-    if ([platform isEqualToString:@"x86_64"])    return @"iPhoneSimulator";
-    
+    //Apple Watch（依据 theapplewiki.com/wiki/Models 校准）
+    if ([platform isEqualToString:@"Watch1,1"] || [platform isEqualToString:@"Watch1,2"]) return @"AppleWatch-1st";
+    if ([platform isEqualToString:@"Watch2,6"] || [platform isEqualToString:@"Watch2,7"]) return @"AppleWatch-S1";
+    if ([platform isEqualToString:@"Watch2,3"] || [platform isEqualToString:@"Watch2,4"]) return @"AppleWatch-S2";
+    if ([platform isEqualToString:@"Watch3,1"] || [platform isEqualToString:@"Watch3,2"] ||
+        [platform isEqualToString:@"Watch3,3"] || [platform isEqualToString:@"Watch3,4"]) return @"AppleWatch-S3";
+    if ([platform isEqualToString:@"Watch4,1"] || [platform isEqualToString:@"Watch4,2"] ||
+        [platform isEqualToString:@"Watch4,3"] || [platform isEqualToString:@"Watch4,4"]) return @"AppleWatch-S4";
+    if ([platform isEqualToString:@"Watch5,1"] || [platform isEqualToString:@"Watch5,2"] ||
+        [platform isEqualToString:@"Watch5,3"] || [platform isEqualToString:@"Watch5,4"]) return @"AppleWatch-S5";
+    if ([platform isEqualToString:@"Watch5,9"] || [platform isEqualToString:@"Watch5,10"] ||
+        [platform isEqualToString:@"Watch5,11"] || [platform isEqualToString:@"Watch5,12"]) return @"AppleWatch-SE";
+    if ([platform isEqualToString:@"Watch6,1"] || [platform isEqualToString:@"Watch6,2"] ||
+        [platform isEqualToString:@"Watch6,3"] || [platform isEqualToString:@"Watch6,4"]) return @"AppleWatch-S6";
+    if ([platform isEqualToString:@"Watch6,6"] || [platform isEqualToString:@"Watch6,7"] ||
+        [platform isEqualToString:@"Watch6,8"] || [platform isEqualToString:@"Watch6,9"]) return @"AppleWatch-S7";
+    if ([platform isEqualToString:@"Watch6,10"] || [platform isEqualToString:@"Watch6,11"] ||
+        [platform isEqualToString:@"Watch6,12"] || [platform isEqualToString:@"Watch6,13"]) return @"AppleWatch-SE2";
+    if ([platform isEqualToString:@"Watch6,14"] || [platform isEqualToString:@"Watch6,15"] ||
+        [platform isEqualToString:@"Watch6,16"] || [platform isEqualToString:@"Watch6,17"]) return @"AppleWatch-S8";
+    if ([platform isEqualToString:@"Watch6,18"]) return @"AppleWatch-Ultra";
+    if ([platform isEqualToString:@"Watch7,1"] || [platform isEqualToString:@"Watch7,2"] ||
+        [platform isEqualToString:@"Watch7,3"] || [platform isEqualToString:@"Watch7,4"]) return @"AppleWatch-S9";
+    if ([platform isEqualToString:@"Watch7,5"]) return @"AppleWatch-Ultra2";
+    if ([platform isEqualToString:@"Watch7,8"] || [platform isEqualToString:@"Watch7,9"] ||
+        [platform isEqualToString:@"Watch7,10"] || [platform isEqualToString:@"Watch7,11"]) return @"AppleWatch-S10";
+    if ([platform isEqualToString:@"Watch7,12"]) return @"AppleWatch-Ultra3";
+    if ([platform isEqualToString:@"Watch7,13"] || [platform isEqualToString:@"Watch7,14"] ||
+        [platform isEqualToString:@"Watch7,15"] || [platform isEqualToString:@"Watch7,16"]) return @"AppleWatch-SE3";
+    if ([platform isEqualToString:@"Watch7,17"] || [platform isEqualToString:@"Watch7,18"] ||
+        [platform isEqualToString:@"Watch7,19"] || [platform isEqualToString:@"Watch7,20"]) return @"AppleWatch-S11";
+    if ([platform isEqualToString:@"Watch8,1"]) return @"AppleWatch-Ultra4";
+    if ([platform isEqualToString:@"Watch8,2"] || [platform isEqualToString:@"Watch8,3"] ||
+        [platform isEqualToString:@"Watch8,4"] || [platform isEqualToString:@"Watch8,5"]) return @"AppleWatch-S12";
+
+    //模拟器（Intel Mac 为 i386/x86_64，Apple Silicon Mac 为 arm64）
+    if ([platform isEqualToString:@"i386"] ||
+        [platform isEqualToString:@"x86_64"] ||
+        [platform isEqualToString:@"arm64"])    return @"iPhoneSimulator";
+
     return platform;
 }
 

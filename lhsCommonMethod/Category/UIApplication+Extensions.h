@@ -23,4 +23,14 @@
 
 + (UIWindow *)appSceneWindow;
 
+/**
+ *  当前窗口尺寸（折叠屏折叠/展开、分屏等窗口变化时实时变化），窗口尚未创建时回退到屏幕尺寸
+ */
++ (CGSize)appWindowSize;
+
+/**
+ *  当前窗口安全区（折叠屏展开态可能有摄像头/状态栏占位，需要按此避让）
+ */
++ (UIEdgeInsets)appSafeAreaInsets;
+
 @end

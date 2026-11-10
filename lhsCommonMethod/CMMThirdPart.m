@@ -103,8 +103,9 @@
 }
 
 + (UIView *)customToastViewWithMessage:(NSString *)message icon:(UIImage *)icon {
-    // 获取屏幕宽度
-    CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
+    // 以当前 window 宽度为准（iPad 分屏下 window 宽度 ≠ 屏幕宽度），并加绝对上限避免大屏拉得过宽
+    CGFloat hostWidth = [CMMUtility currentWindow].bounds.size.width;
+    CGFloat maxToastWidth = MIN(hostWidth - 80, 400.f);
     
     // 容器View（深色背景+圆角）
     UIView *toastView = [[UIView alloc] init];
@@ -126,7 +127,6 @@
     [label sizeToFit];
 
     // 计算toastView的宽度和高度
-    CGFloat maxToastWidth = screenWidth - 80; // 最大宽度为屏幕宽度 - 80
     CGFloat labelWidth = maxToastWidth - 12 - 20 - 8 - 12; // 减去左右padding、图标宽度和间距
     label.frame = CGRectMake(0, 0, labelWidth, label.bounds.size.height);
 

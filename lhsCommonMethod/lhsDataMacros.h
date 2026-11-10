@@ -22,7 +22,7 @@
 #define colorf7f7f7         colorWith(@"f7f7f7")
 
 
-#define hasLiuHai     [UIApplication appSceneWindow].safeAreaInsets.top > 20
+#define hasLiuHai     [UIApplication appSafeAreaInsets].top > 20
 
 //导航栏高度
 #define SLBNavBarHeight               44.f
@@ -31,11 +31,24 @@
 
 //tabbar高度
 #define SLBTabBarHeight                     49.f
-#define SLBBottomHeight                     (hasLiuHai ? 34.f : 0.f)
-#define SLBTabBarAndBottomHeight            (hasLiuHai ? 49.f+34.f : 49.f)
+//底部安全区高度：直接读真实 safeAreaInsets，横竖屏/新老机型/折叠屏自适应（未挂载 window 时为 0）
+#define SLBSafeBottomHeight                 ([UIApplication appSafeAreaInsets].bottom)
+#define SLBBottomHeight                     SLBSafeBottomHeight
+#define SLBTabBarAndBottomHeight            (SLBTabBarHeight + SLBSafeBottomHeight)
 
-#define SLBScreenW                          [[UIScreen mainScreen] bounds].size.width
-#define SLBScreenH                          [[UIScreen mainScreen] bounds].size.height
+//窗口尺寸：折叠屏折叠/展开、iPad 分屏时实时跟随窗口变化，窗口未创建时回退屏幕尺寸
+#define SLBScreenW                          [UIApplication appWindowSize].width
+#define SLBScreenH                          [UIApplication appWindowSize].height
+
+//去除安全区后的可用宽高（窗口宽高减去左右/上下安全区，刘海屏/灵动岛/折叠屏展开态按需避让）
+#define SLBSafeAreaW                        (SLBScreenW - [UIApplication appSafeAreaInsets].left - [UIApplication appSafeAreaInsets].right)
+#define SLBSafeAreaH                        (SLBScreenH - [UIApplication appSafeAreaInsets].top - [UIApplication appSafeAreaInsets].bottom)
+
+//设计稿基准尺寸与等比缩放系数（基准 375x667）
+#define SLBDesignWidth                      375.0
+#define SLBDesignHeight                     667.0
+#define SLBScaleW                           (SLBScreenW / SLBDesignWidth)
+#define SLBScaleH                           (SLBScreenH / SLBDesignHeight)
 
 #define SysVersion                          [[UIDevice currentDevice] systemVersion].floatValue
 

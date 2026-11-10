@@ -53,14 +53,8 @@
 }
 
 + (UIWindow *)currentWindow {
-    UIWindowScene *windowScene = nil;
-    for (UIScene *scene in [UIApplication sharedApplication].connectedScenes) {
-        if ([scene isKindOfClass:[UIWindowScene class]]) {
-            windowScene = (UIWindowScene *)scene;
-            break;
-        }
-    }
-    return windowScene.windows.firstObject;
+    // 统一走 UIApplication+Extensions 的实现（过滤 active scene + keyWindow），避免多处重复维护
+    return [UIApplication appSceneWindow];
 }
 
 //地区码是否有效
@@ -447,11 +441,13 @@
 
 
 +(UIView *)addBagViewOn:(nullable UIViewController *)controller Color:(UIColor *)color{
-    
-    UIView *bagView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
-    bagView.backgroundColor = [color colorWithAlphaComponent:0.4];
 
     UIWindow *window = [self currentWindow];
+    // 以目标容器自身尺寸为准（iPad 分屏/Slide Over 下 view 宽度 ≠ 屏幕宽度），并跟随父视图布局变化
+    UIView *bagView = [[UIView alloc]initWithFrame:(controller ? controller.view.bounds : window.bounds)];
+    bagView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    bagView.backgroundColor = [color colorWithAlphaComponent:0.4];
+
     if (controller) {
         [controller.view addSubview:bagView];
     }else{
@@ -1313,10 +1309,11 @@
     return imageEnd;
 }
 + (CGRect)getCgrect:(CGFloat)x y:(CGFloat)y w:(CGFloat)w h:(CGFloat)h wC:(CGFloat)wC hC:(CGFloat)hC{
-    CGFloat screenW = [UIScreen mainScreen].bounds.size.width;
-    CGFloat screenH = [UIScreen mainScreen].bounds.size.height;
-    
-    return CGRectMake(x * screenW/375.0 * wC, y*screenH/667.0 * hC, w * wC, h * wC);
+    // 基准值统一走 lhsDataMacros 中的宏，缩放系数由 SLBScaleW/SLBScaleH 提供
+    CGFloat screenW = SLBScreenW;
+    CGFloat screenH = SLBScreenH;
+
+    return CGRectMake(x * screenW/SLBDesignWidth * wC, y*screenH/SLBDesignHeight * hC, w * wC, h * wC);
 }
 
 + (NSString *)transformToPinyin:(NSString *)originalString isQuanpin:(BOOL)quanpin{
