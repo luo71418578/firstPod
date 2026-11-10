@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-//#import "lhsCommonMethod.h"
+#import "lhsCommonMethod.h"
 
 #define MIN_FREQ   1
 #define MAX_FREQ   10
@@ -17,6 +17,7 @@
     int shineFreq;
     NSTimer *timerShine;
     bool isShineOn;   //是否正在闪光
+    UIView *viewred;
 }
 @property  bool isLightOn; //灯是否打开
 @property (weak, nonatomic) IBOutlet UIButton *btnOnOff; //开关

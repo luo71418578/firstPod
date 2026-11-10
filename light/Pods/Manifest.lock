@@ -14,17 +14,53 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
+  - lhsCommonMethod (0.0.13):
+    - lhsCommonMethod/Category (= 0.0.13)
+    - lhsCommonMethod/Core (= 0.0.13)
+    - lhsCommonMethod/CountdownTimer (= 0.0.13)
+    - lhsCommonMethod/CutDownButton (= 0.0.13)
+    - lhsCommonMethod/DocumentPickerManager (= 0.0.13)
+    - lhsCommonMethod/HexColors (= 0.0.13)
+    - lhsCommonMethod/LBXPermissions (= 0.0.13)
+    - lhsCommonMethod/MMLocationManager (= 0.0.13)
+    - lhsCommonMethod/Toast (= 0.0.13)
+  - lhsCommonMethod/Category (0.0.13)
+  - lhsCommonMethod/Core (0.0.13):
+    - lhsCommonMethod/Category
+    - lhsCommonMethod/HexColors
+    - lhsCommonMethod/LBXPermissions
+    - lhsCommonMethod/Toast
+  - lhsCommonMethod/CountdownTimer (0.0.13)
+  - lhsCommonMethod/CutDownButton (0.0.13)
+  - lhsCommonMethod/DocumentPickerManager (0.0.13)
+  - lhsCommonMethod/HexColors (0.0.13)
+  - lhsCommonMethod/LBXPermissions (0.0.13)
+  - lhsCommonMethod/MMLocationManager (0.0.13):
+    - lhsCommonMethod/Core
+  - lhsCommonMethod/Toast (0.0.13)
 
 DEPENDENCIES:
   - AFNetworking (= 4.0.1)
+  - lhsCommonMethod (from `https://github.com/luo71418578/firstPod.git`, tag `0.0.13`)
 
 SPEC REPOS:
   trunk:
     - AFNetworking
 
+EXTERNAL SOURCES:
+  lhsCommonMethod:
+    :git: https://github.com/luo71418578/firstPod.git
+    :tag: 0.0.13
+
+CHECKOUT OPTIONS:
+  lhsCommonMethod:
+    :git: https://github.com/luo71418578/firstPod.git
+    :tag: 0.0.13
+
 SPEC CHECKSUMS:
   AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
+  lhsCommonMethod: defa50c5af28bf4076a56f8ebd34449402e0fd43
 
-PODFILE CHECKSUM: dcefe3dbf76bb2936f3178665e600f3abf62f1ce
+PODFILE CHECKSUM: 632182edf06e95b6ebc7dab7b67047bfafbf5206
 
 COCOAPODS: 1.16.2
